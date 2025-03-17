@@ -16,9 +16,9 @@ const Categories = () => {
   return (
     <div className="flex-1 flex-col gap-5 flex">
       <h3>Tìm kiếm</h3>
-      <div className="flex gap-5 items-center">
+      <div className="flex gap-5 items-center flex-col md:flex-row w-full">
         <Input
-          wrapperClassName="flex-1"
+          wrapperClassName="flex-1 w-full"
           placeholder="Tìm kiếm bài viết"
           icon={
             <div className="p-3 bg-green flex justify-center items-center rounded-lg">
@@ -26,9 +26,9 @@ const Categories = () => {
             </div>
           }
         />
-        <div className="block lg:hidden flex-1">
+        <div className="block lg:hidden flex-1 w-full">
           <Select>
-            <SelectTrigger className="bg-white w-full border-0 shadow-lg p-4 py-6 rounded-lg">
+            <SelectTrigger className="bg-white w-full border-0 shadow-lg p-4 py-6 rounded-lg h-[65px]">
               <SelectValue placeholder="Danh mục" />
             </SelectTrigger>
             <SelectContent>

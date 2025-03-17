@@ -122,7 +122,7 @@ const SingleBlog = () => {
             </div>
           </div>
         </div>
-        <div className="flex-1 hidden lg:block">
+        <div className="flex-1 hidden lg:block sticky">
           <Sections />
         </div>
       </div>
